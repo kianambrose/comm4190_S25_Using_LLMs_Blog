@@ -32,6 +32,6 @@
     "href": "posts/001_Post 1/First Post.html",
     "title": "My first Post",
     "section": "",
-    "text": "Why does Chat GPT not respond to these names?\nWhen I ask Chat GPT about David Faber, Brian Hood, or Jonathan Turley it fails to respond.\n\n\n\nWho are these people and why does Chat GPT fail to respond?\n\n\nWhat do other LLM’s say about these people?"
+    "text": "Why does Chat GPT not respond to these names?\nWhen I ask Chat GPT about David Faber, Brian Hood, Matthew Sag, or Jonathan Turley it fails to respond.\n\n\n\nWho are these people and why does Chat GPT fail to respond?\n\n\nWhat do other LLM’s say about these people?\n\n\nCan I trick Chat GPT to respond?\nI asked questions to try and get Chat Gpt to mention the name “Matthew Sag”. I pulled information from his wikipedia page and asked chat gpt to identify the person who fit the description.\n\nAs you can see, Chat GPT was about to correctly identify who I was talking about and even began to respond before it ultimately failed. It seems as though it caught itself about to say the name and decided not to respond. It first checked the web to find the answer and then began responding based on what it found. It is interesting to me that it even began typing after checking the web because I assumed it would have found the name online and stopped the response right then instead of continuing and beginning to respond."
   }
 ]
