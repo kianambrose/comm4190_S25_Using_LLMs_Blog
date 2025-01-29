@@ -18,7 +18,7 @@
     "href": "index.html",
     "title": "My Experiences with LLMs",
     "section": "",
-    "text": "My first Post\n\n\n\n\n\n\nLLMs\n\n\nJupyter\n\n\nlogic\n\n\n\nWow this post actually worked\n\n\n\n\n\nJan 29, 2025\n\n\nKian Ambrose\n\n\n\n\n\n\n\n\n\n\n\n\nA test post\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nFeb 2, 2024\n\n\nAn LLM User\n\n\n\n\n\n\nNo matching items"
+    "text": "My first Post\n\n\n\n\n\n\nLLMs\n\n\nChat GPT 4o\n\n\nlogic\n\n\n\nChat GPT and public figures\n\n\n\n\n\nJan 29, 2025\n\n\nKian Ambrose\n\n\n\n\n\n\n\n\n\n\n\n\nA test post\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nFeb 2, 2024\n\n\nAn LLM User\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -32,6 +32,6 @@
     "href": "posts/001_Post 1/First Post.html",
     "title": "My first Post",
     "section": "",
-    "text": "How to make a Post (with Kian)"
+    "text": "Why does Chat GPT not respond to these names?\nWhen I ask Chat GPT about David Faber, Brian Hood, or Jonathan Turley it fails to respond.\n\n\n\nWho are these people and why does Chat GPT fail to respond?\n\n\nWhat do other LLM’s say about these people?"
   }
 ]
