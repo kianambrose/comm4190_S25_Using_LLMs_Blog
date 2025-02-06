@@ -23,40 +23,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -227,10 +193,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img src="Breed Dog.png" width="50%"></p>
 </blockquote>
 <p>Chat GPT was able to correctly identify the breed “Australian Shepherd” and also mentioned that it could be a minature one. It then identified what led it to believe that the dog was of that breed. Finally, it identified key behavioral qualities of the dog, all of which are correct and qualities that my dog actually has.</p>
-<p>In the next attempt</p>
-<div id="e26044a5-e153-4df4-9dcd-95c0ef57826d" class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>$</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<p>In the next attempt, I will give it an image with all three of my dogs and see how well it is able to draw all three within the same image. I am wondering if having multiple subjects in the same image will make it more difficult for Chat GPT to recreate the image correctly</p>
+</section>
+<section id="attempt-3" class="level1">
+<h1>Attempt 3</h1>
+<p>For this attempt I simple provided an image with all of my dogs and told chat gpt to recreate the image.</p>
+<blockquote class="blockquote">
+<p><img src="All Dog.png" width="50%"></p>
+</blockquote>
+<p>Here, Chat GPT was less accurate when producing the image of the dogs. Especially when creating the image of my mini aussie, Chat GPT created a dog that did not really look like my dog in terms of shape, fur, and face. However, Chat GPT did a pretty good job of recreating the sizes of the dogs in relation to one another. It also was able to match the colors of the dogs fairly well and the background matches the scenery in the original image.</p>
+<p>I then tried to explain the breeds of the dogs to see if that would help Chat GPT produce a better image of the dogs.</p>
+<blockquote class="blockquote">
+<p><img src="2nd All Dog.png" width="50%"></p>
+</blockquote>
+<p>This slightly surprised me. When I gave Chat GPT more information it produced an image that was less like the original image. In this image the dogs look less like the ones it originally produced. The size and color of the dogs was completely messed up.</p>
+<p>It seems that Chat GPT became confused when there were too many instructions given in producing the image. Instead, it may be better to let Chat GPT take the reigns and produce what it see’s, without providing input as to what is in the image. I think this area of Chat GPT still needs to be tested more and I am curious how well Chat GPT will be able to take constructive criticism on its images in the near future.</p>
 
 
 </section>
