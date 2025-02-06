@@ -5,4 +5,4 @@ about:
   template: jolla
 ---
 
-About this blog
+Exploring the limits of Chat GPT in various areas of interest 
