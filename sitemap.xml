@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://kianambrose.github.io/comm4190_S25_Using_LLMs_Blog/posts/002_Post 2/Second Post.html</loc>
-    <lastmod>2025-02-06T21:50:38.996Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kianambrose.github.io/comm4190_S25_Using_LLMs_Blog/posts/001_Post 1/First Post.html</loc>
-    <lastmod>2025-02-06T21:50:38.967Z</lastmod>
-  </url>
-  <url>
     <loc>https://kianambrose.github.io/comm4190_S25_Using_LLMs_Blog/index.html</loc>
-    <lastmod>2025-02-06T21:50:38.957Z</lastmod>
+    <lastmod>2025-02-12T18:53:27.392Z</lastmod>
   </url>
   <url>
-    <loc>https://kianambrose.github.io/comm4190_S25_Using_LLMs_Blog/about.html</loc>
-    <lastmod>2025-02-06T21:50:38.957Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kianambrose.github.io/comm4190_S25_Using_LLMs_Blog/posts/003_Post 3/Post 3.html</loc>
-    <lastmod>2025-02-06T21:50:38.997Z</lastmod>
+    <loc>https://kianambrose.github.io/comm4190_S25_Using_LLMs_Blog/posts/002_Post 2/Second Post.html</loc>
+    <lastmod>2025-02-12T18:53:27.431Z</lastmod>
   </url>
   <url>
     <loc>https://kianambrose.github.io/comm4190_S25_Using_LLMs_Blog/posts/000_test_post/index.html</loc>
-    <lastmod>2025-02-06T21:50:38.958Z</lastmod>
+    <lastmod>2025-02-12T18:53:27.393Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kianambrose.github.io/comm4190_S25_Using_LLMs_Blog/about.html</loc>
+    <lastmod>2025-02-12T18:53:27.392Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kianambrose.github.io/comm4190_S25_Using_LLMs_Blog/posts/003_Post 3/Post 3.html</loc>
+    <lastmod>2025-02-12T18:53:27.434Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kianambrose.github.io/comm4190_S25_Using_LLMs_Blog/posts/001_Post 1/First Post.html</loc>
+    <lastmod>2025-02-12T18:53:27.402Z</lastmod>
   </url>
 </urlset>
