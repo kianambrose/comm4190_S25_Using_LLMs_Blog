@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Kian Ambrose">
+<meta name="dcterms.date" content="2025-02-21">
+<meta name="description" content="Which LLM is the best at 20 questions?">
 
-<title>My Experiences with LLMs – My Explorations with LLMs</title>
+<title>20 Questions with different LLM’s – My Explorations with LLMs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-71390cc8b9bae10139428574d3aab2c6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4068ff539535f4dd85e85d4e5122841d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-71390cc8b9bae10139428574d3aab2c6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-4068ff539535f4dd85e85d4e5122841d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,77 +69,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">My Explorations with LLMs</span>
     </a>
   </div>
@@ -149,7 +92,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -167,317 +110,87 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">My Experiences with LLMs</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">20 Questions with different LLM’s</h1>
+                  <div>
+        <div class="description">
+          Which LLM is the best at 20 questions?
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">LLMs</div>
+                <div class="quarto-category">Chat GPT 4o</div>
+                <div class="quarto-category">20 Questions</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Kian Ambrose </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 21, 2025</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(7)</span></div><div class="category" data-category="MjAlMjBRdWVzdGlvbnM=">20 Questions <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q2hhdCUyMEdQVCUyMDRv">Chat GPT 4o <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Q29tbXVuaWNhdGlvbg==">Communication <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGVjaXBoZXJpbmclMjBJbWFnZXM=">Deciphering Images <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SW1hZ2UlMjBSZWNyZWF0aW9u">Image Recreation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TExNcw==">LLMs <span class="quarto-category-count">(7)</span></div><div class="category" data-category="TWVkaWNpbmU=">Medicine <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bG9naWM=">logic <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cHJvbXB0aW5n">prompting <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<section id="format" class="level1">
+<h1>Format</h1>
+<p>I asked 4 different LLM’s to play 20 questions with me. In this game I had the LLM guess the thing that I was thinking of. In each of the games, the thing I was “thinking” of was a notebook. Let’s compare how they performed.</p>
+</section>
+<section id="chat-gpt-4o" class="level1">
+<h1>Chat GPT 4o</h1>
+<p><img src="Chat 20 Q.png" width="50%"></p>
+<p><img src="Chat 20 Q2.png" width="50%"></p>
+<p>Chat GPT was not able to decipher what was said. The question that probably led to its downfall was the question “Is it used for writing or drawing?” After this question, Chat GPT moved from questions that narrow the choices down to direct guesses. While a notebook is used when writing and drawing, Chat GPT interpreted my response to mean that I was thinking about a writing or drawing instrument.</p>
+</section>
+<section id="copilot" class="level1">
+<h1>Copilot</h1>
+<p><img src="Copilot.png" width="50%"> <img src="Copilot 2.png" width="50%"></p>
+<p>Copilot was able to decipher what I was thinking of. Copilot started out with very similar questions to the ones asked by Chat GPT. Where Copilot separated itself (probably for the better) was when it continued asking general questions rather than trying to directly guess what I was thinking about. I think this is a strategy that a human would follow more closely. Another difference was that Copilot would offer up examples of things that it was asking about. For example, it said ” Is it something you use to organize papers, like a stapler or paperclip?“. Here, Copilot made it clear what it meant by”something you use to organize papers.” I think this would have helped Chat GPT in its process, especially with its question about whether it was something I write or draw with.</p>
+</section>
+<section id="gemini" class="level1">
+<h1>Gemini</h1>
+<p><img src="Gemini.png" width="50%"> <img src="Gemini 2.png" width="50%"> <img src="Gemini 3.png" width="50%"></p>
+<p>Gemini was not able to determine what I was thinking of. Gemini’s first 2 question differed from Copilot and Chat GPT. Instead of asking if it was living or man made, it first asked if it was an animal and then if it was a plant. Finally on the third question it asked if it was manufactured. This process seems backwards. Instead of asking a specific question, like if it is an animal, it first should have asked if it was living. This would have saved an additional question and is more consistent with how a human would play the game. After the first few questions, Gemini was got on the same track as Copilot and began asking about if it was found in a house and where it was found in the house. Unfortunately, it was unable to ask questions that were specific to a notebook, so it seemed to get a little lost after “Is it something related to reading?”. Before this point I thought it might narrow down the questioning, however, the following question was “Is it something you use to tell time?” which showed me that it had no idea what I was thinking of.</p>
+</section>
+<section id="llama" class="level1">
+<h1>Llama</h1>
+<p><img src="Llama.png" width="50%"> <img src="Llama 2.png" width="50%"></p>
+<p>Llama probably performed the worst at this game. It actually started out asking good questions, starting from the most general and then narrowing the questions down. It followed a similar process initially to Copilot. However, after question 13, it started repeating questions. This is not a good approach in 20 questions because you waste questions. No other LLM made the mistake of re asking the same questions. Not only did Llama ask the same question twice, it asked it using the same exact wording. It then proceeded to make the mistake a second time. In addition, Llama did not identify when the game was over. Instead of admitting defeat after question 20, it continued on to question 21. It seems that it was unable to follow directions, or there was some memory leak where it began forgetting what I had already told it.</p>
+</section>
+<section id="overall" class="level1">
+<h1>Overall</h1>
+<p>Overall, the LLM that performed the best at this game was Copilot. It was the only one to correctly identify what I was thinking of. It also followed a process that aligns with the general consensus of a “smart” way to play the game (starting with general questions before narrowing down). While there were many similarities among the different LLM’s, Copilot was able to harness the best qualities of the group and correctly guess the object.</p>
+<p>Going forward it would be interesting to see if these LLM’s are able to improve their question asking ability to improve at 20 questions. It would also be interesting to repeat this experiment multiple times to see if the results change.</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="TExNcyUyQ0NoYXQlMjBHUFQlMjA0byUyQzIwJTIwUXVlc3Rpb25z" data-listing-date-sort="1740096000000" data-listing-file-modified-sort="1740178483344" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="739">
-<div class="thumbnail">
-<p><a href="./posts/006_Post 6/Post 6.html" class="no-external"></a></p><a href="./posts/006_Post 6/Post 6.html" class="no-external">
-<p class="card-img-top"><img src="posts/006_Post 6/Chat 20 Q.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/006_Post 6/Post 6.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/006_Post 6/Post 6.html" class="no-external">20 Questions with different LLM’s</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/006_Post 6/Post 6.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('TExNcw=='); return false;">
-LLMs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Q2hhdCUyMEdQVCUyMDRv'); return false;">
-Chat GPT 4o
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('MjAlMjBRdWVzdGlvbnM='); return false;">
-20 Questions
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/006_Post 6/Post 6.html" class="no-external">Which LLM is the best at 20 questions?</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/006_Post 6/Post 6.html" class="no-external">
-<div class="listing-date">
-Feb 21, 2025
-</div>
-<div class="listing-author">
-Kian Ambrose
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="TExNcyUyQ0NoYXQlMjBHUFQlMjA0byUyQ0RlY2lwaGVyaW5nJTIwSW1hZ2Vz" data-listing-date-sort="1740096000000" data-listing-file-modified-sort="1740178483332" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="598">
-<div class="thumbnail">
-<p><a href="./posts/005_Post 5/Post 5.html" class="no-external"></a></p><a href="./posts/005_Post 5/Post 5.html" class="no-external">
-<p class="card-img-top"><img src="posts/005_Post 5/ShortHand1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/005_Post 5/Post 5.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/005_Post 5/Post 5.html" class="no-external">A Penn Mystery Letter</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/005_Post 5/Post 5.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('TExNcw=='); return false;">
-LLMs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Q2hhdCUyMEdQVCUyMDRv'); return false;">
-Chat GPT 4o
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RGVjaXBoZXJpbmclMjBJbWFnZXM='); return false;">
-Deciphering Images
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/005_Post 5/Post 5.html" class="no-external">Can Chat GPT decipher a mysterious letter recieved in 1880?</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/005_Post 5/Post 5.html" class="no-external">
-<div class="listing-date">
-Feb 21, 2025
-</div>
-<div class="listing-author">
-Kian Ambrose
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="TExNcyUyQ0NoYXQlMjBHUFQlMjA0byUyQ0NvbW11bmljYXRpb24=" data-listing-date-sort="1739318400000" data-listing-file-modified-sort="1740178483326" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="605">
-<div class="thumbnail">
-<p><a href="./posts/004_Post 4/Post 4.html" class="no-external"></a></p><a href="./posts/004_Post 4/Post 4.html" class="no-external">
-<p class="card-img-top"><img src="posts/004_Post 4/Chat 1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/004_Post 4/Post 4.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/004_Post 4/Post 4.html" class="no-external">A Conversation with Myself</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/004_Post 4/Post 4.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('TExNcw=='); return false;">
-LLMs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Q2hhdCUyMEdQVCUyMDRv'); return false;">
-Chat GPT 4o
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Q29tbXVuaWNhdGlvbg=='); return false;">
-Communication
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/004_Post 4/Post 4.html" class="no-external">What happens when Chat GPT talks with itself?</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/004_Post 4/Post 4.html" class="no-external">
-<div class="listing-date">
-Feb 12, 2025
-</div>
-<div class="listing-author">
-Kian Ambrose
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="TExNcyUyQ0NoYXQlMjBHUFQlMjA0byUyQ01lZGljaW5l" data-listing-date-sort="1738800000000" data-listing-file-modified-sort="1740178483320" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1166">
-<div class="thumbnail">
-<p><a href="./posts/003_Post 3/Post 3.html" class="no-external"></a></p><a href="./posts/003_Post 3/Post 3.html" class="no-external">
-<p class="card-img-top"><img src="posts/003_Post 3/Migraine.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/003_Post 3/Post 3.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/003_Post 3/Post 3.html" class="no-external">Dr.&nbsp;Chat GPT?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/003_Post 3/Post 3.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('TExNcw=='); return false;">
-LLMs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Q2hhdCUyMEdQVCUyMDRv'); return false;">
-Chat GPT 4o
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('TWVkaWNpbmU='); return false;">
-Medicine
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/003_Post 3/Post 3.html" class="no-external">Can Chat GPT become my new doctor?</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/003_Post 3/Post 3.html" class="no-external">
-<div class="listing-date">
-Feb 6, 2025
-</div>
-<div class="listing-author">
-Kian Ambrose
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="TExNcyUyQ0NoYXQlMjBHUFQlMjA0byUyQ0ltYWdlJTIwUmVjcmVhdGlvbg==" data-listing-date-sort="1738800000000" data-listing-file-modified-sort="1740178483317" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="759">
-<div class="thumbnail">
-<p><a href="./posts/002_Post 2/Second Post.html" class="no-external"></a></p><a href="./posts/002_Post 2/Second Post.html" class="no-external">
-<p class="card-img-top"><img src="posts/002_Post 2/GPT Test 1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/002_Post 2/Second Post.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/002_Post 2/Second Post.html" class="no-external">Chat GPT’s Ability to Recreate Images it is Given</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/002_Post 2/Second Post.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('TExNcw=='); return false;">
-LLMs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Q2hhdCUyMEdQVCUyMDRv'); return false;">
-Chat GPT 4o
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SW1hZ2UlMjBSZWNyZWF0aW9u'); return false;">
-Image Recreation
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/002_Post 2/Second Post.html" class="no-external">Chat GPT and Image Generation</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/002_Post 2/Second Post.html" class="no-external">
-<div class="listing-date">
-Feb 6, 2025
-</div>
-<div class="listing-author">
-Kian Ambrose
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="TExNcyUyQ0NoYXQlMjBHUFQlMjA0byUyQ2xvZ2lj" data-listing-date-sort="1738108800000" data-listing-file-modified-sort="1740178483287" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="972">
-<div class="thumbnail">
-<p><a href="./posts/001_Post 1/First Post.html" class="no-external"></a></p><a href="./posts/001_Post 1/First Post.html" class="no-external">
-<p class="card-img-top"><img src="posts/001_Post 1/Failed GPT Prompt 1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/001_Post 1/First Post.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/001_Post 1/First Post.html" class="no-external">Chat GPT’s Experience With Names</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/001_Post 1/First Post.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('TExNcw=='); return false;">
-LLMs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Q2hhdCUyMEdQVCUyMDRv'); return false;">
-Chat GPT 4o
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('bG9naWM='); return false;">
-logic
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/001_Post 1/First Post.html" class="no-external">Chat GPT and public figures</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/001_Post 1/First Post.html" class="no-external">
-<div class="listing-date">
-Jan 29, 2025
-</div>
-<div class="listing-author">
-Kian Ambrose
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="TExNcyUyQ3Byb21wdGluZyUyQ2xvZ2lj" data-listing-date-sort="1706832000000" data-listing-file-modified-sort="1740178483278" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="450">
-<div class="thumbnail">
-<p><a href="./posts/000_test_post/index.html" class="no-external"></a></p><a href="./posts/000_test_post/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/000_test_post/gpt3-5.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/000_test_post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/000_test_post/index.html" class="no-external">A test post</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/000_test_post/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('TExNcw=='); return false;">
-LLMs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('cHJvbXB0aW5n'); return false;">
-prompting
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('bG9naWM='); return false;">
-logic
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/000_test_post/index.html" class="no-external">An example post from a Jupyter notebook</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/000_test_post/index.html" class="no-external">
-<div class="listing-date">
-Feb 2, 2024
-</div>
-<div class="listing-author">
-An LLM User
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
