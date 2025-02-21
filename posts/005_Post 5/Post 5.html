@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Kian Ambrose">
-<meta name="dcterms.date" content="2025-01-29">
-<meta name="description" content="Chat GPT and public figures">
+<meta name="dcterms.date" content="2025-02-21">
+<meta name="description" content="Can Chat GPT decipher a mysterious letter recieved in 1880?">
 
-<title>Chat GPT’s Experience With Names – My Explorations with LLMs</title>
+<title>A Penn Mystery Letter – My Explorations with LLMs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -111,16 +111,16 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Chat GPT’s Experience With Names</h1>
+      <h1 class="title">A Penn Mystery Letter</h1>
                   <div>
         <div class="description">
-          Chat GPT and public figures
+          Can Chat GPT decipher a mysterious letter recieved in 1880?
         </div>
       </div>
                           <div class="quarto-categories">
                 <div class="quarto-category">LLMs</div>
                 <div class="quarto-category">Chat GPT 4o</div>
-                <div class="quarto-category">logic</div>
+                <div class="quarto-category">Deciphering Images</div>
               </div>
                   </div>
   </div>
@@ -138,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 29, 2025</p>
+        <p class="date">February 21, 2025</p>
       </div>
     </div>
     
@@ -157,67 +157,33 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="why-does-chat-gpt-not-respond-when-asked-about-specific-names" class="level1">
-<h1>Why does Chat GPT not respond when asked about specific names?</h1>
-<p>When prompted with certain names, Chat GPT will produce an error saying that it is “unable to produce a response.” I am curious how Chat GPT decides whether to respond to certain names, and on what basis it determines whether the name is on the list of ones it does not respond to.</p>
-<p><img src="Failed GPT Prompt 1.png" width="50%"></p>
+<section id="background-information" class="level1">
+<h1>Background Information</h1>
+<p>In 1880 a letter was sent from Horace Howard Furness containing 20+ pages of unknown writing. The type of writing or language remains unknown to this day. The mysterious letter is believed to have been from a spiritual reading that was a popular occurance at the time. In the 1880s, spiritual readings were closely tied to the Spiritualist movement, which peaked in popularity during the late 19th century. Spiritualism was based on the belief that the living could communicate with the spirits of the dead, often through mediums who conducted séances, automatic writing, and clairvoyant readings.</p>
 </section>
-<section id="who-are-these-people-and-why-does-chat-gpt-fail-to-respond" class="level1">
-<h1>Who are these people and why does Chat GPT fail to respond?</h1>
-<p>I have done some research on Google trying to find what names people have found to produce this error with Chat GPT. There seems to be a select set of names that all seem unrelated to eachother at first glance. So far I have compiled this list of names that causes Chat GPT to fail to respond: David Faber, Brian Hood, Matthew Sag, Jonathan Zittrain, Brian Lunduke, Jonathan Turley, and Alexander Hanff. Brian Hood was convicted of second-degree murder, Jonathan Turley is an attorney and George Washington University Law School professor , Jonathan Zittrain is a Harvard Law School professor, and David Faber is a CNBC journalist.</p>
-<p>There seem to be a few theories as to why Chat GPT does not respond when asked about these people, but one of the main theory seems to be that someone with that name asked Chat GPT to not provide information about them. There is a “right to be forgotten” principle in Europe that protects people from having their information presented publicy without their consent. It allows individuals to request that their information be removed from certain websites or search engines.</p>
-<p>Another theory is that Chat GPT has a regex (a sequence of characters that defines a search pattern) on certain names that causes the chat to discontinue and fail. It remains unclear how Chat GPT decides who it cannot talk about or whether these names are manually placed by people at Open AI.</p>
-</section>
-<section id="can-i-trick-chat-gpt-to-respond" class="level1">
-<h1>Can I trick Chat GPT to respond?</h1>
-<p>I was curious as to whether I could trick Chat GPT into telling me about the people named above, or even just trick it to say the name back to me.</p>
-<blockquote class="blockquote">
-<p>First, I asked questions to try and get Chat Gpt to mention the name “Matthew Sag”. I pulled information from his wikipedia page and asked chat gpt to identify the person who fit the description.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><img src="Matthew Sag.png" width="50%"></p>
-</blockquote>
-<blockquote class="blockquote">
-<p>As you can see, Chat GPT was about to correctly identify who I was talking about and even began to respond before it ultimately failed. It seems as though it caught itself about to say the name and decided not to respond. Chat GPT went through the process of first checking the web to find the answer based on the information, and then responding based on what it found.</p>
-</blockquote>
-<p>It is interesting to me that it even began typing after checking the web because I assumed it would have found the name online and stopped the response immediately instead of continuing and beginning to respond. I think through this exercise we can begin to get a timeline for when Chat GPT recognizes what it is about to output.</p>
-<p>Here is another example: &gt;In this example I asked it about Alexander Hanff. I accidently mistyped the last name in the prompt, however, Chat GPT responded with some suggestions.</p>
-<blockquote class="blockquote">
-<p><img src="ChatGPT Name Test.png" width="50%"></p>
-</blockquote>
-<blockquote class="blockquote">
-<p>As you can see, Chat GPT actually responded by recommending webpages about people with the name Alexander Hanff, and then wrote a respond about someone named Alexander Hanf (only one “f”). It then began writing about a new person but stopped immediately.</p>
-<p>This was particularly interesting because it was able to provide links to people named Alexander Hanff, and even made the connection between my mistyped name and “Hanff” with 2 f’s. So it seems that Chat GPT was able to infer that I meant “Hanff”, but also waited to fail its response until it began typing out information about the Andrew Hanff. For context, Chat GPT recommended the links seen in the image before it began writing a response to the prompt.</p>
-</blockquote>
-<p>In this exercise I tried to get Chat GPT to produce the name on its own through a series of longer prompts. &gt; I first asked it about the last name.</p>
-<blockquote class="blockquote">
-<p><img src="Hanff.png" width="50%"></p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Then I asked about the first name.</p>
-<p><img src="Alexander.png" width="50%"></p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Finally, I asked Chat GPT to combine the two.</p>
-<p><img src="Combined Name.png" width="50%"></p>
-</blockquote>
-<blockquote class="blockquote">
-<p>At first it didn’t really combine the names as intended, however, it did talk about both Alexander and Hanff in the same sentence. I prompted again to get a different result.</p>
-<p><img src="Name Origin.png" width="50%"></p>
-</blockquote>
-<p>The results from this lead me to believe that there is in fact some kind of regex that prevents the names from being produced by Chat GPT. Chat GPT is able to talk about the first and last name separately in the same sentence, however, when the name appears with the last name right after the first name it causes a failure.</p>
-<p>I tried one more exercise to test this theory.</p>
-<blockquote class="blockquote">
-<p>In this exercise I tried adding a middle name to see how Chat GPT would react to the first and last name not being directly next to one another.</p>
-<p><img src="Shepard.png" width="50%"></p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Here, Chat GPT said the full name back to me, and then suggested a new person before failing to respond. In this case, however, it produced a form of bitmoji which was taken from a website. Here is the website: https://www.apidays.global/speaker/alexander-hanff/ <img src="Hanff Link.png" width="50%"></p>
-</blockquote>
-<blockquote class="blockquote">
-<p>This could potentially shed more light onto the specific Alexander Hanff that Chat GPT is afraid to talk about. In some sense Chat GPT prompted me to visit this website and learn about Alexander Hanff, even though it was trained not to respond to the prompt about him.</p>
-<p>While the details of this mystery are still not solved, the picture of why and how Chat GPT prevents certain names from producing responses is becoming clearer.</p>
-</blockquote>
+<section id="can-chat-gpt-identify-what-the-letter-is-saying" class="level1">
+<h1>Can Chat GPT identify what the letter is saying?</h1>
+<p>While there is currently no way for me to verify if Chat GPT’s interpretation of the letter is correct, I was interested in determing if Chat GPT could come up with a reasonable interpretation of what was being said based on the context of the letter.</p>
+<p>Here is my exchange with Chat GPT:</p>
+<p><img src="ShortHand1.png" width="50%"></p>
+<p>First, I wanted to see if Chat GPT had any predictions of the type of writing that was in the letter.</p>
+<p><img src="ShortHand2.png" width="50%"></p>
+<p>Chat GPT correctly identifies a few possibilities for what the writing could have been. I decide to have Chat GPT pursue the idea that it could be Gregg Shorthand. I ask Chat GPT if it is familiar with Gregg Shorthand and if it is able to translate the image to english.</p>
+<p><img src="ShortHand3.png" width="50%"></p>
+<p>Here, Chat GPT hypothesizes what the letter could be saying. It is still somewhat uncertain and from its response I am not confident in its ability to tell me what is said in the writing. To help with this, I have Chat GPT break down how it came to its conclusion.</p>
+<p><img src="ShortHand4.png" width="50%"></p>
+<p>Now that I know Chat GPT can go symbol by symbol and attempt to translate what is written, I wanted to give Chat GPT more context to see if it would help Chat GPT understand if it was analyzing using the correct language.</p>
+<p><img src="ShortHand5.png" width="50%"></p>
+<p>Chat GPT suggested a different type of shorthand called Duployan Shorthand, so I decided to pursue this as a better possibility. I asked Chat GPT to translate a single line, given that it was written in Duployan Shorthand.</p>
+<p><img src="ShortHand6.png" width="50%"></p>
+<p>Here, Chat GPT reprocessed the image and made it clearer, allowing it to go stroke by stroke and produce a possible translation. Again, the translations seem consistent with what is typically written down in spiritual readings, even without explicitly telling Chat GPT that it was from one.</p>
+<p>I then repeated this process of going line by line for a couple pages and then asked Chat GPT for its thoughts.</p>
+<p><img src="ShortHand7.png" width="50%"></p>
+<p>Chat GPT also identified the themes in the language that led it to believe it was from a spiritual reading. Chat GPT’s ability to connect its interpretation to the spiritual readings increased my confidence in its translations and led me to believe that it may actually be correctly translating certain parts of the letter.</p>
+<p>I then gave Chat GPT some more context as to who’s name was on the envelope of the letter.</p>
+<p><img src="ShortHand8.png" width="50%"></p>
+<p>Chat GPT is able to provide a hypothesis for further context of the letter. Based on my own research on the side, everything that it suggested seems to be a plausible explanation for why the letter was being associated with him, and what interest he had in the letter.</p>
+<p>Going forward it would be interesting to compare these findings to those of an expert on the subject and analyze if Chat GPT is moving in the correct direction and if it is able to translate more of the letter.</p>
 
 
 </section>
