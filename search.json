@@ -28,20 +28,6 @@
     "text": "Format\nI asked 4 different LLM’s to play 20 questions with me. In this game I had the LLM guess the thing that I was thinking of. In each of the games, the thing I was “thinking” of was a notebook. Let’s compare how they performed.\n\n\nChat GPT 4o\n\n\nChat GPT was not able to decipher what was said. The question that probably led to its downfall was the question “Is it used for writing or drawing?” After this question, Chat GPT moved from questions that narrow the choices down to direct guesses. While a notebook is used when writing and drawing, Chat GPT interpreted my response to mean that I was thinking about a writing or drawing instrument.\n\n\nCopilot\n \nCopilot was able to decipher what I was thinking of. Copilot started out with very similar questions to the ones asked by Chat GPT. Where Copilot separated itself (probably for the better) was when it continued asking general questions rather than trying to directly guess what I was thinking about. I think this is a strategy that a human would follow more closely. Another difference was that Copilot would offer up examples of things that it was asking about. For example, it said ” Is it something you use to organize papers, like a stapler or paperclip?“. Here, Copilot made it clear what it meant by”something you use to organize papers.” I think this would have helped Chat GPT in its process, especially with its question about whether it was something I write or draw with.\n\n\nGemini\n  \nGemini was not able to determine what I was thinking of. Gemini’s first 2 question differed from Copilot and Chat GPT. Instead of asking if it was living or man made, it first asked if it was an animal and then if it was a plant. Finally on the third question it asked if it was manufactured. This process seems backwards. Instead of asking a specific question, like if it is an animal, it first should have asked if it was living. This would have saved an additional question and is more consistent with how a human would play the game. After the first few questions, Gemini was got on the same track as Copilot and began asking about if it was found in a house and where it was found in the house. Unfortunately, it was unable to ask questions that were specific to a notebook, so it seemed to get a little lost after “Is it something related to reading?”. Before this point I thought it might narrow down the questioning, however, the following question was “Is it something you use to tell time?” which showed me that it had no idea what I was thinking of.\n\n\nLlama\n \nLlama probably performed the worst at this game. It actually started out asking good questions, starting from the most general and then narrowing the questions down. It followed a similar process initially to Copilot. However, after question 13, it started repeating questions. This is not a good approach in 20 questions because you waste questions. No other LLM made the mistake of re asking the same questions. Not only did Llama ask the same question twice, it asked it using the same exact wording. It then proceeded to make the mistake a second time. In addition, Llama did not identify when the game was over. Instead of admitting defeat after question 20, it continued on to question 21. It seems that it was unable to follow directions, or there was some memory leak where it began forgetting what I had already told it.\n\n\nOverall\nOverall, the LLM that performed the best at this game was Copilot. It was the only one to correctly identify what I was thinking of. It also followed a process that aligns with the general consensus of a “smart” way to play the game (starting with general questions before narrowing down). While there were many similarities among the different LLM’s, Copilot was able to harness the best qualities of the group and correctly guess the object.\nGoing forward it would be interesting to see if these LLM’s are able to improve their question asking ability to improve at 20 questions. It would also be interesting to repeat this experiment multiple times to see if the results change."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Exploring the limits of Chat GPT in various areas of interest"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "My Experiences with LLMs",
-    "section": "",
-    "text": "LLM’s and Complexity\n\n\n\n\n\n\nLLMs\n\n\nChat GPT 4o\n\n\nComplex Topics\n\n\n\nWhich LLM can explain complex topics in the most understandable way?\n\n\n\n\n\nFeb 21, 2025\n\n\nKian Ambrose\n\n\n\n\n\n\n\n\n\n\n\n\n20 Questions with different LLM’s\n\n\n\n\n\n\nLLMs\n\n\nChat GPT 4o\n\n\n20 Questions\n\n\n\nWhich LLM is the best at 20 questions?\n\n\n\n\n\nFeb 21, 2025\n\n\nKian Ambrose\n\n\n\n\n\n\n\n\n\n\n\n\nA Penn Mystery Letter\n\n\n\n\n\n\nLLMs\n\n\nChat GPT 4o\n\n\nDeciphering Images\n\n\n\nCan Chat GPT decipher a mysterious letter recieved in 1880?\n\n\n\n\n\nFeb 21, 2025\n\n\nKian Ambrose\n\n\n\n\n\n\n\n\n\n\n\n\nA Conversation with Myself\n\n\n\n\n\n\nLLMs\n\n\nChat GPT 4o\n\n\nCommunication\n\n\n\nWhat happens when Chat GPT talks with itself?\n\n\n\n\n\nFeb 12, 2025\n\n\nKian Ambrose\n\n\n\n\n\n\n\n\n\n\n\n\nChat GPT’s Ability to Recreate Images it is Given\n\n\n\n\n\n\nLLMs\n\n\nChat GPT 4o\n\n\nImage Recreation\n\n\n\nChat GPT and Image Generation\n\n\n\n\n\nFeb 6, 2025\n\n\nKian Ambrose\n\n\n\n\n\n\n\n\n\n\n\n\nDr. Chat GPT?\n\n\n\n\n\n\nLLMs\n\n\nChat GPT 4o\n\n\nMedicine\n\n\n\nCan Chat GPT become my new doctor?\n\n\n\n\n\nFeb 6, 2025\n\n\nKian Ambrose\n\n\n\n\n\n\n\n\n\n\n\n\nChat GPT’s Experience With Names\n\n\n\n\n\n\nLLMs\n\n\nChat GPT 4o\n\n\nlogic\n\n\n\nChat GPT and public figures\n\n\n\n\n\nJan 29, 2025\n\n\nKian Ambrose\n\n\n\n\n\n\n\n\n\n\n\n\nA test post\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nFeb 2, 2024\n\n\nAn LLM User\n\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "posts/007_Post 7/Post 7.html",
     "href": "posts/007_Post 7/Post 7.html",
     "title": "LLM’s and Complexity",
@@ -82,6 +68,69 @@
     "title": "LLM’s and Complexity",
     "section": "Understanding Basic Machine Learning: Neural Networks",
     "text": "Understanding Basic Machine Learning: Neural Networks\nImagine you have a plant and you want to make sure it gets just the right amount of water. Not too little, not too much. You keep track of how much water you give it and how the plant responds. Over time, you learn the perfect amount of water that makes your plant happy and healthy. This is similar to how basic machine learning works!\n\nWhat Are Neural Networks?\nNeural networks are like a digital brain. Just like our brains learn from experience, neural networks learn from data. They try to find patterns and make decisions based on examples they have seen before.\n\nHow Do Neural Networks Work?\n\nInputs: Think of inputs as ingredients for a recipe. In the case of making the plant happy, inputs could be how much sunlight it gets, how much water you give, and the type of soil.\nNeurons: Inside the neural network, there are many tiny units called neurons. Each neuron takes some inputs, does some calculations, and decides on an output. It’s like a mini decision-maker.\nLayers: Neurons are organized into layers. The first layer might decide if the amount of sunlight is enough, the next layer might check if the soil is good, and yet another might consider the water amount.\nOutput: This is the result or decision. After passing through the neurons and layers, the network gives an output, like “Give more water” or “Everything is perfect.”\nLearning: Just like you learn the best way to water your plant, neural networks learn by making predictions, seeing if they’re right, and then adjusting. This happens over and over, getting better each time.\n\n\n\nWhy Use Neural Networks?\nNeural networks are great for tasks where there is a lot of data and complex patterns. They are used in recognizing faces in photos, predicting the weather, and even playing games!\nTo sum up, neural networks are powerful tools that mimic how our brains work to solve problems by learning from examples. They take in data, process it through layers of decision-making, and provide outputs to help solve complex challenges."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "My Experiences with LLMs",
+    "section": "",
+    "text": "What does DeepSeek not discuss?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLLM’s and Complexity\n\n\n\n\n\n\nLLMs\n\n\nChat GPT 4o\n\n\nComplex Topics\n\n\n\nWhich LLM can explain complex topics in the most understandable way?\n\n\n\n\n\nFeb 28, 2025\n\n\nKian Ambrose\n\n\n\n\n\n\n\n\n\n\n\n\n20 Questions with different LLM’s\n\n\n\n\n\n\nLLMs\n\n\nChat GPT 4o\n\n\n20 Questions\n\n\n\nWhich LLM is the best at 20 questions?\n\n\n\n\n\nFeb 21, 2025\n\n\nKian Ambrose\n\n\n\n\n\n\n\n\n\n\n\n\nA Penn Mystery Letter\n\n\n\n\n\n\nLLMs\n\n\nChat GPT 4o\n\n\nDeciphering Images\n\n\n\nCan Chat GPT decipher a mysterious letter recieved in 1880?\n\n\n\n\n\nFeb 21, 2025\n\n\nKian Ambrose\n\n\n\n\n\n\n\n\n\n\n\n\nA Conversation with Myself\n\n\n\n\n\n\nLLMs\n\n\nChat GPT 4o\n\n\nCommunication\n\n\n\nWhat happens when Chat GPT talks with itself?\n\n\n\n\n\nFeb 12, 2025\n\n\nKian Ambrose\n\n\n\n\n\n\n\n\n\n\n\n\nChat GPT’s Ability to Recreate Images it is Given\n\n\n\n\n\n\nLLMs\n\n\nChat GPT 4o\n\n\nImage Recreation\n\n\n\nChat GPT and Image Generation\n\n\n\n\n\nFeb 6, 2025\n\n\nKian Ambrose\n\n\n\n\n\n\n\n\n\n\n\n\nDr. Chat GPT?\n\n\n\n\n\n\nLLMs\n\n\nChat GPT 4o\n\n\nMedicine\n\n\n\nCan Chat GPT become my new doctor?\n\n\n\n\n\nFeb 6, 2025\n\n\nKian Ambrose\n\n\n\n\n\n\n\n\n\n\n\n\nChat GPT’s Experience With Names\n\n\n\n\n\n\nLLMs\n\n\nChat GPT 4o\n\n\nlogic\n\n\n\nChat GPT and public figures\n\n\n\n\n\nJan 29, 2025\n\n\nKian Ambrose\n\n\n\n\n\n\n\n\n\n\n\n\nA test post\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nFeb 2, 2024\n\n\nAn LLM User\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Exploring the limits of Chat GPT in various areas of interest"
+  },
+  {
+    "objectID": "posts/008_Post 8/Post 9.html",
+    "href": "posts/008_Post 8/Post 9.html",
+    "title": "What does DeepSeek not discuss?",
+    "section": "",
+    "text": "---\ntitle: \"Limits of Deep Seek\"\ndescription: \"What information is not allowed to be discussed on DeepSeek\"\nauthor: \"Kian Ambrose\"\ndate: \"02/28/2025\"\ncategories:\n  - LLMs\n  - Chat GPT 4o\n  - China\n---\n\n\n  Cell In[2], line 8\n    - Chat GPT 4o\n               ^\nSyntaxError: invalid decimal literal\nDeepSeek seems to not be willing to discuss things that the Chinese government blocks on other China-based products. For example, if I ask it about the Tiananmen Square Massacre, I get this response.\nChatGPT, on the other hand, gives a full explanation of what occurred."
+  },
+  {
+    "objectID": "posts/008_Post 8/Post 9.html#deepseek",
+    "href": "posts/008_Post 8/Post 9.html#deepseek",
+    "title": "What does DeepSeek not discuss?",
+    "section": "DeepSeek:",
+    "text": "DeepSeek:\nTaiwan is a complex and sensitive issue in international relations. According to the One-China policy, which is widely recognized by the international community, Taiwan is considered a part of China. The Chinese government views Taiwan as a province of China and opposes any form of “Taiwan independence.” However, Taiwan operates with its own government and political system, which leads to differing perspectives on its status. The international community’s stance on Taiwan’s status varies, with some countries and organizations treating it as a separate entity in certain contexts."
+  },
+  {
+    "objectID": "posts/008_Post 8/Post 9.html#chatgpt",
+    "href": "posts/008_Post 8/Post 9.html#chatgpt",
+    "title": "What does DeepSeek not discuss?",
+    "section": "ChatGPT:",
+    "text": "ChatGPT:\n\nIs Taiwan a Country?\nThe status of Taiwan is politically and diplomatically complex. It operates as a de facto independent country, but its official status remains disputed.\n\n\nKey Facts About Taiwan’s Status:\n\nGovernment & Functioning:\nTaiwan has its own government, military, currency (New Taiwan Dollar), constitution, and democratic elections. It operates as a sovereign state in practice.\nPeople’s Republic of China (PRC) Claim:\nThe Chinese government considers Taiwan a part of China and insists on the One China Principle, which states that Taiwan is an inseparable part of its territory.\nInternational Recognition:\n\nAs of now, only a handful of countries (fewer than 15) officially recognize Taiwan as a sovereign nation.\n\nMost countries, including the United States, Japan, and European nations, do not officially recognize Taiwan as a separate country but maintain unofficial diplomatic relations.\n\nTaiwan is not a member of the United Nations, as China holds a UN seat and blocks Taiwan’s membership.\n\nU.S. & Global Position:\n\nThe U.S. follows a policy of “strategic ambiguity,” recognizing the PRC as the sole government of China while maintaining strong unofficial ties with Taiwan.\n\nMany countries support Taiwan’s participation in global organizations like the World Health Organization (WHO) but avoid formal recognition to prevent diplomatic conflict with China.\n\n\n\n\nBottom Line:\n\nDe facto (in practice): Taiwan operates as an independent country.\n\nDe jure (under international law): Taiwan is not widely recognized as a fully sovereign state due to diplomatic pressures from China."
+  },
+  {
+    "objectID": "posts/008_Post 8/Post 9.html#analysis",
+    "href": "posts/008_Post 8/Post 9.html#analysis",
+    "title": "What does DeepSeek not discuss?",
+    "section": "Analysis:",
+    "text": "Analysis:\nHere, DeepSeek seems to respond in a relatively unbiased manner and addresses multiple viewpoints on whether Taiwan is a country. It also comments on the Chinese government’s opinion on the matter, communicating that it has its own separate views.\nTo further test DeepSeek vs. ChatGPT, I asked, “What are things that the Chinese government does not want to talk about?”"
+  },
+  {
+    "objectID": "posts/008_Post 8/Post 9.html#deepseek-1",
+    "href": "posts/008_Post 8/Post 9.html#deepseek-1",
+    "title": "What does DeepSeek not discuss?",
+    "section": "DeepSeek",
+    "text": "DeepSeek\nAt first, DeepSeek began responding, mentioning that, like any government, there are topics that the Chinese government prefers not to discuss. It then started listing topics, starting with the debate on whether Taiwan is its own country. DeepSeek then started typing out “Tiananmen Square Massacre” but stopped typing, deleted all past text, and displayed the message, “Sorry, that’s beyond my current scope. Let’s talk about something else.”"
+  },
+  {
+    "objectID": "posts/008_Post 8/Post 9.html#chatgpt-1",
+    "href": "posts/008_Post 8/Post 9.html#chatgpt-1",
+    "title": "What does DeepSeek not discuss?",
+    "section": "ChatGPT",
+    "text": "ChatGPT\nChatGPT, on the other hand, was willing to discuss and provide examples of certain topics that the Chinese government heavily censors. These include:\n- Tiananmen Square Massacre (1989)\n- Taiwan’s Independence\n- Hong Kong Protests & Democracy Movement\n- Uyghur Repression & Xinjiang Detention Camps\n- Falun Gong and Religious Suppression\n- Tibet & the Dalai Lama\nIn this exercise, we clearly see the influence of the Chinese government on restricting what can be seen and learned about through DeepSeek. Even acknowledging that these events and topics exist is beyond the scope of what DeepSeek is willing to discuss. I find it interesting that DeepSeek chooses not to discuss the events rather than lie or only include parts of the information regarding these topics. It could just as easily answer and provide incomplete information that only shows one side of the story for these controversial topics. Maybe DeepSeek does not want to hurt its reputation as a valid source of information and thus would rather not discuss the topic at all than provide false information. On the other hand, it could be the Chinese government’s instruction to just not discuss the topics at all."
+  },
+  {
+    "objectID": "posts/008_Post 8/Post 9.html#further-tests",
+    "href": "posts/008_Post 8/Post 9.html#further-tests",
+    "title": "What does DeepSeek not discuss?",
+    "section": "Further Tests",
+    "text": "Further Tests\nI decided to ask DeepSeek about all of the topics that ChatGPT said were controversial in the eyes of the Chinese government, and DeepSeek responded the same way to all of them. It first began typing, providing some information about the topics, but after about 4 seconds of typing, it deleted all it had said and replaced it with, “Sorry, that’s beyond my current scope. Let’s talk about something else.”\nI think it would be interesting to see if there are any workarounds to get DeepSeek to discuss these topics. One possible workaround that I have seen includes the use of numbers to replace certain letters when having DeepSeek explain the events. In this case, DeepSeek seems to not recognize the “trigger words” that seem to cause DeepSeek to stop responding."
   },
   {
     "objectID": "posts/001_Post 1/First Post.html",
