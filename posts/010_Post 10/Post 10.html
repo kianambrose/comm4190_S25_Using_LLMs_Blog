@@ -200,30 +200,53 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="first-video" class="level2">
 <h2 class="anchored" data-anchor-id="first-video">First Video</h2>
 <p>For my first video, I wanted to make something simple, to gauge how well Sora was able to follow instructions. I asked it to create a video of a dog chasing a tennis ball.</p>
+<div id="6ca0cd91-60ba-4574-8dde-bd7abb9bec52" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> HTML</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>video_path <span class="op">=</span> <span class="st">"Dog Running.mp4"</span> </span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>HTML(<span class="ss">f"""</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ss">&lt;video width="640" height="360" controls autoplay loop&gt;</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ss">  &lt;source src="</span><span class="sc">{</span>video_path<span class="sc">}</span><span class="ss">" type="video/mp4"&gt;</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ss">  Your browser does not support the video tag.</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ss">&lt;/video&gt;</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ss">"""</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>video_path <span class="op">=</span> <span class="st">"Dog Running.mp4"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>display(HTML(<span class="ss">f"""</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ss">&lt;video width="640" height="360" controls autoplay loop&gt;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ss">  &lt;source src="</span><span class="sc">{</span>video_path<span class="sc">}</span><span class="ss">" type="video/mp4"&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ss">&lt;/video&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ss">"""</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
 
 <video width="640" height="360" controls="" autoplay="" loop="">
   <source src="Dog Running.mp4" type="video/mp4">
-  Your browser does not support the video tag.
 </video>
+</div>
+</div>
 <p>I was very impressed by the dog’s image and movement. The hair moving around looked very realistic and the dog’s jumping looked almost identical to dogs I have seen in real life. Additionally, the lighting in the video seemed to make perfect sense, with the shadow directly following the dogs movement. The grass also seems to move perfectly with the paws hitting the ground. I would have said the video was perfect overall if it weren’t for the odd movement of the tennis ball. While the dog is following the tennis ball, the tennis ball is clearly not obeying the laws of gravity and it does not look like the ball is being held in the dog’s mouth. Also, the rotation of the ball seemed a little odd which threw the video off. Overall, I was very impressed by the realistic nature of the video and I would not have thought it was created by AI if it weren’t for the ball movement.</p>
 <p>One question I have is why the video’s created look so realistic, but the images from Chat GPT always look cartoonish? Is this done on purpose, or is this something that OpenAI is still working to improve?</p>
 </section>
 </section>
 <section id="creating-a-second-video" class="level1">
 <h1>Creating a Second Video</h1>
-<p>For this video, I wanted to give a more complex prompt.</p>
+<p>For this video, I wanted to give a more complex prompt. Here is the prompt I gave it.</p>
+<section id="prompt" class="level2">
+<h2 class="anchored" data-anchor-id="prompt">Prompt:</h2>
+<p>“A peaceful early morning in New York City, captured in cinematic 4K. The camera glides over quiet streets as golden sunlight reflects off glass skyscrapers. A light mist rises from the pavement as joggers and early commuters make their way through Central Park. A barista in a small café carefully pours a latte, creating delicate latte art. Yellow taxis roll through intersections, their headlights reflecting on wet pavement from a recent drizzle. A pigeon flutters onto a park bench as distant sirens and soft city sounds fill the air. The scene feels immersive, calming, and real, like the opening shot of a high-budget documentary.”</p>
+<div id="6a5fe24e-35ad-4823-80dc-744d490ebb0b" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> HTML</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>video_path <span class="op">=</span> <span class="st">"NYC Video.mp4"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>display(HTML(<span class="ss">f"""</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ss">&lt;video width="640" height="360" controls autoplay loop&gt;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ss">  &lt;source src="</span><span class="sc">{</span>video_path<span class="sc">}</span><span class="ss">" type="video/mp4"&gt;</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="ss">&lt;/video&gt;</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="ss">"""</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<video width="640" height="360" controls="" autoplay="" loop="">
+  <source src="NYC Video.mp4" type="video/mp4">
+</video>
+</div>
+</div>
+<p>Sora follows most of the instructions well but falls short in a few key areas. The barista successfully creates latte art as described, but the hand movements and the way the coffee creamer spills are incorrect. Additionally, the taxi appears inside the coffee shop instead of rolling through an intersection as intended. Another issue is the absence of pigeons fluttering from a park bench, which was part of the original prompt.</p>
+<p>That said, Sora does an excellent job of capturing the overall atmosphere I envisioned. The sunlight and coffee shop setting feel incredibly authentic—so much so that, without the small mistakes, I could easily believe I was in Central Park in the morning, enjoying my coffee in New York City. With just a few adjustments, this video could have been perfect. While a few details disrupt the scene, removing those inconsistencies would make everything feel seamless and natural.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
