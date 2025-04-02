@@ -11,7 +11,7 @@ website:
       
 format:
   html:
-    theme: solar
+    theme: lux
     css: styles.css
 
 execute:
