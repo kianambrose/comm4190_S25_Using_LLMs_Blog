@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Kian Ambrose">
-<meta name="dcterms.date" content="2025-03-18">
-<meta name="description" content="Updating artwork without redoing the entire image">
+<meta name="dcterms.date" content="2025-04-09">
+<meta name="description" content="How well can Chat GPT estimate height based solely on pictures?">
 
-<title>Gemini 2.0 Flash Experimental – My Explorations with LLMs</title>
+<title>Guessing Height with Chat GPT – My Explorations with LLMs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -111,16 +111,16 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Gemini 2.0 Flash Experimental</h1>
+      <h1 class="title">Guessing Height with Chat GPT</h1>
                   <div>
         <div class="description">
-          Updating artwork without redoing the entire image
+          How well can Chat GPT estimate height based solely on pictures?
         </div>
       </div>
                           <div class="quarto-categories">
                 <div class="quarto-category">LLMs</div>
-                <div class="quarto-category">Gemini 2.0</div>
-                <div class="quarto-category">Image Editing</div>
+                <div class="quarto-category">Images</div>
+                <div class="quarto-category">Estimation</div>
               </div>
                   </div>
   </div>
@@ -138,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">March 18, 2025</p>
+        <p class="date">April 9, 2025</p>
       </div>
     </div>
     
@@ -157,44 +157,27 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="image-editing" class="level1">
-<h1>Image Editing</h1>
-<p>Up until the release of Gemini 2.0 Flash Experimental, editing images using an LLM was a pain. Once the initial image was generated, if you wanted to change any part of the image, the LLM would often also change other parts of the image, and mess up the image overall. It was better to simply restart the image generation process, explicitly including the key instruction that it missed in the first attempt. Google Gemini’s new release claims to solve this problem, making the process of editing an image much easier and less frustrating.</p>
+<section id="plan" class="level1">
+<h1>Plan</h1>
+<p>For this post, I am going to be feeding images to ChatGPT and having it estimate the height of people or objects in the images. I will not give it any references to base the height off of. I simply want to see how well it can perform without being given any hints. I anticipate ChatGPT being fairly good at estimating height, especially if the image includes a lot of items that ChatGPT can use to base off of.</p>
 </section>
-<section id="attempt-1" class="level1">
-<h1>Attempt 1</h1>
-<p>Here, I asked Gemini to create an image of a birthday cake that said Happy Birthday on the icing. Here is what it created:</p>
-<p><img src="Birthday 1.jpeg" width="50%"></p>
-<p>Clearly, it correctly creates the cake with the proper message written on the top. Now, I will try to add 6 candles to the cake without anything else changing. I will simply ask it to add 6 candles, hoping that it will know not to change anything else.</p>
-<p><img src="Birthday 2.jpeg" width="50%"></p>
-<p>Here, Gemini adds the correct amount of candles but removes the writing from the cake. Gemini also removes 3 cherries from the top of the cake and changes the icing pattern in a couple of places. Overall, however, the main aspects of the cake stayed the same, including the size, shape, color, and even the background behind the cake. Next, I will give it more instruction, asking it to add the candles, but make sure to keep the writing and everything else on the cake the same. Here is the result:</p>
-<p><img src="Birthday 3.jpeg" width="50%"></p>
-<p>Gemini did a better job this time. Although the writing is not exactly the same size and placement as the initial cake, the style and color of the writing are the same and it looks like it was made smaller to allow space for the candles. The only thing that is wrong is that Gemini include 7 candles when I asked it for 6. I will now ask it to recount the number of candles and tell me how many are currently on the cake.</p>
-<section id="response-there-are-six-candles-on-the-cake." class="level2">
-<h2 class="anchored" data-anchor-id="response-there-are-six-candles-on-the-cake.">Response: There are six candles on the cake.</h2>
-<p>I wrote back to Gemini and told it that there were 7 candles on the cake that it made for me. It apologized and admitted that it was wrong. It then tried to fix the problem but created a cake with 4 candles.</p>
-<p>Throughout this process, it seems that Gemini did a good job of editing certain features of the image that I wanted to edit while keeping other features the same. The thing that it seems to be struggling with is counting the number of items of something in the image. The next experiment will address this. Overall, Gemini seems to have improved on the ability to change a feature of an image and certainly requires less instruction than its competitors when it comes to altering a specific part of an image.</p>
+<section id="test-1" class="level1">
+<h1>Test 1</h1>
+<p><img src="Height 1.png" width="50%"></p>
+<p>Here, ChatGPT got both estimations almost exactly correct. I am still slightly unsure if I would trust its reasoning that the person on the left looks “around average male height.” Let’s see if it can explain with more detail how it came to that conclusion.</p>
+<p><img src="Height 2.png" width="50%"></p>
+<p>It seems that the entire calculation begins on an assumption of the person on the left’s height. I am slightly surprised that ChatGPT would not use the beach cabana in the background as a reference point. I am sure it knows the average height of a beach cabana, so that seems like it would be a more direct way to estimate height rather than by assuming the height of the person on the left based on appearance.</p>
 </section>
+<section id="test-2" class="level1">
+<h1>Test 2</h1>
+<p>This time, I tried giving it an image with more reference points to base height off of. Let’s see how it does.</p>
+<p><img src="Height 3.png" width="50%"> <img src="Height 4.png" width="50%"></p>
+<p>This time, ChatGPT approaches the problem more in the way that I would expect. It uses its knowledge of the average heights of other things in the image to estimate the height of the man. All of the reasoning behind why it made its choice seems to make sense. The one thing that it doesn’t mention is the perspective of the camera. The camera is slightly below the head of the man, which would make him appear slightly taller than he really is. ChatGPT overestimates his height by 3 inches. I am not sure if this is all due to the angle of the photo or if the kitchen has different measurements than what it estimated.</p>
 </section>
-<section id="attempt-2" class="level1">
-<h1>Attempt 2</h1>
-<p>This attempt will focus on the ability of Gemini to count the number of pencils in an image. First, I asked it to create an image of 7 pencils. Here is what I got:</p>
-<p><img src="Pencil 1.jpeg" width="50%"></p>
-<p>Clearly, there are 11 pencils. This surprised me because Gemini was not off by one or two pencils, but rather was off by 4. I now wonder what process Gemini uses to identify what is an individual pencil in the image and how it keeps track of the number of individual pencils. To see what Gemini thought of its own creation, I asked it to count how many pencils were in that image.</p>
-<section id="response-there-are-9-pencils-in-the-image." class="level2">
-<h2 class="anchored" data-anchor-id="response-there-are-9-pencils-in-the-image.">Response: There are 9 pencils in the image.</h2>
-<p>Again, I am surprised by the inability of Gemini to count but also by the choice of 9. I would have thought that it would be 7 since that was the number included in the instructional prompt. To test its confidence in its answer, I asked if it was sure about its response, hoping that maybe it would double-check and count correctly.</p>
-</section>
-<section id="response-you-are-absolutely-right-my-apologies.-i-miscounted-the-pencils-in-the-image.-there-are-indeed-9-pencils.-thank-you-for-pointing-out-my-mistake" class="level2">
-<h2 class="anchored" data-anchor-id="response-you-are-absolutely-right-my-apologies.-i-miscounted-the-pencils-in-the-image.-there-are-indeed-9-pencils.-thank-you-for-pointing-out-my-mistake">Response: You are absolutely right! My apologies. I miscounted the pencils in the image. There are indeed 9 pencils. Thank you for pointing out my mistake!</h2>
-<p>Here, we see one of the flaws that I often encounter when using LLM’s. They struggle to retrace their own steps which leads to repeated or flawed logic. It first apologized for counting wrong, then told me that the number of pencils in the image was 9. I now have even less confidence in the ability of Gemini to count the number of pencils in the image. Let’s see if Gemini can remove 3 pencils from the image correctly.</p>
-<p><img src="Pencil 2.jpeg" width="50%"></p>
-<p>Here, it removed all of the pencils, leaving only the background from the previous images. I tried this again to see if it would correct itself and it made the same mistake.</p>
-</section>
-</section>
-<section id="conclusion" class="level1">
-<h1>Conclusion</h1>
-<p>Overall, my experiments highlight both the strengths and weaknesses of Gemini’s image editing capabilities. It performs well when it comes to modifying specific features of an image, such as adding candles to a cake while maintaining most of the original elements. However, it struggles significantly with counting objects, both when generating an image and when analyzing an existing one. The inability to consistently count or recognize individual objects, such as pencils, suggests a limitation in its object-tracking capabilities. Additionally, Gemini’s tendency to miscount and then confidently assert incorrect answers shows a flaw in its ability to verify its own outputs. While its image manipulation skills are improving, there is still a lot of work to be done when it comes to precise object identification and numerical accuracy. Future tests will explore whether these issues persist in different contexts and whether improvements can be made with more refined prompting.</p>
+<section id="test-3" class="level1">
+<h1>Test 3</h1>
+<p><img src="Height 5.png" width="50%"> <img src="Height 6.png" width="50%"> <img src="Height 7.png" width="50%"></p>
+<p>Here, ChatGPT decides to approach the problem using the dogs as a reference. This is a good idea because it correctly identified the breeds of the dogs and their heights. The calculation, however, led to a height that was far too tall. I think it is interesting that in both of the approaches using the dogs, the estimation was way off, and that ChatGPT noticed this and changed its approach. Its final approach was correct, and while it was more simple, it seems that often ChatGPT is better at estimating height based on body proportions rather than the objects or dogs around you.</p>
 
 
 </section>
